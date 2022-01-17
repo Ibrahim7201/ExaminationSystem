@@ -1,0 +1,340 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .msg {
+  border-bottom: solid 5px #ff6363;
+  background-color: #fffda2;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8rem;
+  height: 15rem;
+  position: absolute;
+  left: 2rem;
+  top: -18rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 0px 0px 24px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60rem;
+  border-color: #072227;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .header {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+body .container .progress {
+  width: 100%;
+  border-bottom: grey 3px dashed;
+  height: 0.6rem;
+  margin: 0 2rem 0 2rem;
+}
+
+body .container .progress .pr {
+  width: 0%;
+  background-color: orange;
+  height: 100%;
+}
+
+body .container .exam {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .exam ul {
+  list-style-type: none;
+}
+
+body .container .exam ul li {
+  margin: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  background-color: #ffcbcb;
+  width: 20rem;
+}
+
+body .container .exam .left {
+  padding: 1rem;
+  width: 65%;
+  height: 27rem;
+  background-color: #f1efff;
+}
+
+body .container .exam .left .list .c1 {
+  margin-top: 3rem;
+  border-radius: 12px 12px 0 0;
+}
+
+body .container .exam .left .list .c4 {
+  border-radius: 0 0 12px 12px;
+}
+
+body .container .exam .left li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .exam .left .q {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+
+body .container .exam .left .a input[type="radio"] {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body .container .exam .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  width: 35%;
+  height: 27rem;
+  background-color: #fffdde;
+}
+
+body .container .exam .right .markedlist {
+  overflow-y: scroll;
+  height: 90%;
+  width: 100%;
+}
+
+body .container .exam .right .timer {
+  text-align: center;
+  background-color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  border: solid 1px;
+  border-radius: 8px;
+}
+
+body .container .exam .right li {
+  width: 10rem;
+  margin-top: 0;
+  margin-left: 1.3rem;
+  position: relative;
+  border-radius: 8px;
+}
+
+body .container .exam .right li:hover {
+  background-color: #ffcbcbbd;
+  cursor: pointer;
+}
+
+body .container .exam .right li .rightspan {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0.5rem;
+}
+
+body .container .exam .right li .rightspan:hover {
+  background-color: rgba(255, 0, 0, 0.712);
+}
+
+body .container .exam .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 6rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .container .exam .btns .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .exam .btns .nav .num {
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  background-color: #14aaf5;
+  color: white;
+}
+
+body .container .exam .btns .nav .back {
+  padding: 1rem;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  border-left: solid 1px grey;
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+}
+
+body .container .exam .btns .nav .back:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+body .container .exam .btns .nav .forward {
+  padding: 1rem;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  border-right: solid 1px grey;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+}
+
+body .container .exam .btns .nav .forward:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+body .container .exam .btns .mark {
+  margin-left: 4rem;
+  padding: 1rem;
+  background-color: #ffb830;
+  border-radius: 10px;
+  color: white;
+}
+
+body .container .exam .btns .mark:hover {
+  cursor: pointer;
+}
+
+body .container .submit {
+  background-color: green;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+body .container .submit:hover {
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.753);
+}
+
+body .pop_up {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  z-index: 1;
+  width: 45rem;
+  height: 20rem;
+  border: solid 5px;
+  border-color: #017901;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-style: dashed;
+}
+
+body .pop_up .content {
+  padding-bottom: 5px;
+  border-bottom: solid 3px orange;
+}
+
+body .pop_up .far {
+  color: green;
+  font-size: 8rem;
+}
+
+body .pop_up .cl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .pop_up .cl .closing {
+  background-color: #7c99ac;
+  font-weight: bold;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+body .pop_up .cl .closing:hover {
+  background-color: rgba(0, 155, 26, 0.726);
+}
+
+.markedStyle {
+  background-color: grey;
+}
+/*# sourceMappingURL=main.css.map */

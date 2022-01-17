@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="..\fontawesome-free-5.15.4-web\css\all.css">
+</head>
+
+<body>
+    <div class="msg">
+        <div class="upper" style="color: #FF6363; font-size: 5rem;"><i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="lower" style="font-family: sans-serif; margin-bottom: 2rem; text-align: center;font-size: 1.05rem;">
+            Hurry up <br>Time is
+            running</div>
+    </div>
+    <div class="container">
+        <div class="header">Examination</div>
+        <div class="progress">
+            <div class="pr"></div>
+        </div>
+        <div class="exam">
+            <div class="left">
+                <div class="q">This is a Question</div>
+                <div class="a">
+                    <ul class="list">
+                        <li class="c1"><input value="choice1" type="radio" name="answers" id="choice1"
+                                onchange="print(this)"></li>
+                        <li class="c2"><input value="choice2" type="radio" name="answers" id="choice2"
+                                onchange="print(this)">
+                        </li>
+                        <li class="c3"><input value="choice3" type="radio" name="answers" id="choice3"
+                                onchange="print(this)">
+                        </li>
+                        <li class="c4"><input value="choice4" type="radio" name="answers" id="choice4"
+                                onchange="print(this)">
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <div class="nav">
+                        <div class="back" onclick="Back(event)">Previous</div>
+                        <div class="num">1</div>
+                        <div class="forward" onclick="Next(event)">Next</div>
+                    </div>
+                    <div class="mark" onclick="Mark(event)">Mark</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="markedlist">
+                    <div id="markedtitle" style="text-align: center; font-weight: bold;">Marked Questions</div>
+                    <ul class="marked">
+                        <li style="display: none;"></li>
+                    </ul>
+                </div>
+                <div class="timer" style="font-weight: bold;font-size: 1.5rem;">Timer</div>
+            </div>
+        </div>
+        <div class="submit" onclick="GradesMsg(this)">Submit</div>
+
+
+
+    </div>
+    <div class="pop_up">
+        <div class="up" style="text-align: center;"><i class="far fa-calendar-check"></i></div>
+        <div style="text-align: center;" class="content">Congratulation, you finished your exam.</div>
+        <div class="cl">
+            <div style="text-align: center;" class="closing" onclick="Grads(event)">Go see my results!</div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+        integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <script src="c.js"></script>
+</body>
+
+</html>

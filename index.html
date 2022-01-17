@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web\css\all.css">
+</head>
+
+<body>
+    <div class=" container">
+        <div class="header">Registration Form </div>
+        <div class="form">
+            <span class="s">First Name:</span>
+            <div class="con">
+                <input type="text" class="in fnm" placeholder="Your First Name .." onblur="Check1(event)"
+                    oninput="vfname(event)">
+                <label class="lfnm"></label>
+            </div>
+            <span class="s">Last Name:</span>
+            <div class="con">
+                <input type="text" class="in lnm" placeholder="Your Last Name .." oninput="vlname(event)"
+                    onblur="Check2(event)">
+                <label class="llnm"></label>
+            </div>
+            <span class="s">Email Address:</span>
+            <div class="con">
+                <input type="email" class="in mail" placeholder="Your Email Address .." oninput="vmail(event)"
+                    onblur="Check3(event)">
+                <label class="lmail"></label>
+            </div>
+            <span class="s">Password:</span>
+            <div class="con">
+                <input type="password" class="in pw" placeholder="Enter a password .." oninput="vpw(event)"
+                    onblur="Check4(event)">
+                <label class="lpw"></label>
+            </div>
+            <span class="s">Re-enter Password:</span>
+            <div class="con">
+                <input type="password" class="in rpw" placeholder="Re-enter your password .." oninput="vrpw(event)"
+                    onblur="Check5(event)">
+                <label class="lrpw"></label>
+            </div>
+            <span class="btn" style="display:block;" onclick="Register(event)">Register</span>
+        </div>
+    </div>
+
+    <div class="pop_up">
+        <div class="up" style="text-align: center;"><i class="fas fa-exclamation-triangle"></i></div>
+        <div style="text-align: center;" class="content">Be sure that all fields are filled correctly.</div>
+        <div style="text-align: center;" class="closing" onclick="Cls(event)">Close</div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="c.js"></script>
+</body>
+
+</html>
